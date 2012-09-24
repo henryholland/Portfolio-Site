@@ -1,0 +1,57 @@
+.cube {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 60%);
+	border: 5px;    
+    //height: 120px;
+    position:relative;
+    padding: 5px;
+    margin: 5px;
+}
+.cube::after {
+    content: '';
+    height:20px;
+    position:absolute;
+    top: 100%;
+
+    left:0;
+    right: 0;
+    background-color: hsl(0, 0%, 57%);
+    -webkit-transform:skew(35deg);
+    -webkit-transform-origin: top left;
+    
+    -moz-transform:skew(35deg);
+    -moz-transform-origin:top left;
+    
+    -ms-transform:skew(35deg);
+    -ms-transform-origin:top left;
+    
+    -o-transform:skew(35deg);
+    -o-transform-origin:top left;
+    
+    transform:skew(35deg);
+    transform-origin:top left;    
+}
+.cube::before {
+
+    content: '';
+    width: 7px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    background-color:  hsl(0, 0%, 77%);
+    -webkit-transform: skewY(55deg);
+    -webkit-transform-origin: top left;
+    
+    -moz-transform: skewY(55deg);
+    -moz-transform-origin: top left;
+    
+    -ms-transform: skewY(55deg);
+    -ms-transform-origin: top left;    
+    
+    -o-transform: skewY(55deg);
+    -o-transform-origin: top left;     
+    
+    transform: skewY(55deg);
+    transform-origin: top left;     
+}​

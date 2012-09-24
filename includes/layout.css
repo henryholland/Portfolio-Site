@@ -1,0 +1,151 @@
+/* 
+* Amazium V1.2
+* Copyright 2012, Mike Ballan
+* www.amazium.co.uk
+*/
+
+#radial-center {
+  /* fallback */
+  background-color: #F6F1E5;
+  background-image: url(images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#F1F1F1), to(#F6F1E5));
+  
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #F1F1F1, #F6F1E5);
+  
+  /* Firefox 3.6+ */ 
+  background: -moz-radial-gradient(circle, #F1F1F1, #F6F1E5);
+  
+  /* IE 10 */ 
+  background: -ms-radial-gradient(circle, #F1F1F1, #F6F1E5);
+  
+  /* Opera cannot do radial gradients yet */
+}
+
+body {
+	font-family: 'Droid Serif', serif;
+	//background-color: rgb(91%, 90%, 91%);
+	//background-image:url('../images/tlc15d.jpg');
+}
+
+.title_container {
+	//position: relative;
+}
+
+.title_spacer {
+	margin-top: 4em;
+}
+
+.test {
+	float: left;
+	width: 33%;
+//border: 1% solid green;;
+}
+/*.title_tile:before {
+	height: 1em;
+	content: url("arrow_tail.svg");
+}*/
+
+.title_tile {
+	//position: absolute; 
+	    bottom: 0;
+}
+.title_tile H1 {
+	color:white;
+	font-weight:bold;
+	font-style:oblique;
+	background-color: #494949;
+	font-size: 2.5em;
+	letter-spacing: -0.05em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.nav h3{
+	padding-left: 0.5em;
+}
+
+
+.project_tile {
+	position: relative;
+	background-color: #FFFFFF;
+	padding:1em;;
+	margin-bottom:32px;
+}
+
+.project_tile img {
+	position: relative;
+}
+
+.project_tile .desc {
+	position: absolute; bottom: 0;
+
+}
+
+.project_tile h3{
+	padding-top: 0.5em;
+	font-size: 1.5em;
+	font-style:oblique;
+	font-color: #F1F1F1;
+}
+
+.project_tile .desc p{
+	width:9;
+	background-color: #F1F1F1;
+}
+
+/***** Screen 960px *****/
+	
+.example								{ margin:0; padding:0; }
+
+
+
+/***** Screen Bigger than 960px *****/
+@media only screen and (min-width:1200px) {
+
+.example								{ margin:0; padding:0; }
+
+}
+
+
+
+/***** Tablet (Smaller than 959px) *****/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+.example								{ margin:0; padding:0; }	
+
+}
+
+
+
+/***** Phone (portrait 300px) *****/
+@media only screen and (max-width: 767px) {
+
+.example								{ margin:0; padding:0; }
+
+}
+
+
+	
+/***** Phone (landscape 420px) *****/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+.example								{ margin:0; padding:0; }
+
+}
+
+
+
+/***** Retina *****/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+.example								{ margin:0; padding:0; }
+
+}
