@@ -29,6 +29,7 @@
 
 body {
 	font-family: 'Droid Serif', serif;
+	height: 100%;
 	//background-color: rgb(91%, 90%, 91%);
 	//background-image:url('../images/tlc15d.jpg');
 }
@@ -52,20 +53,59 @@ body {
 }*/
 
 .title_tile {
-	//position: absolute; 
-	    bottom: 0;
+	//position: absolute;
+	height: 100%; 
+	bottom: 0;
 }
-.title_tile H1 {
+
+#title_flag {
+	position: relative;
+	background-color: blue;
+	
+}
+
+#title_flag_left {
+	display:inline;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 2em;
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(test.svg);
+}
+
+#title_flag_right {
+	display:inline;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 1.8em;
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(test.svg);
+}
+
+H1 {
+	display:block;
+	float:inherit
 	color:white;
+	text-align:center;
 	font-weight:bold;
 	font-style:oblique;
-	background-color: #494949;
 	font-size: 2.5em;
 	letter-spacing: -0.05em;
 	padding-top: 0.3em;
 	padding-bottom: 0.3em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	background-color: red;
+	width:40%;
+	border: fuchsia;
 }
 
 .nav h3{
